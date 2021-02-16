@@ -1,0 +1,39 @@
+<style>
+body {
+  background-color: #545454;
+}
+input {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.sidenav {
+                padding: 12px 12px 12px 12px;
+                text-decoration: none;
+                font-size: 18px;
+                color: Black;
+                display: block;
+                background-color: #000000;
+            }
+
+ </style>
+
+<body>
+  <div class="sidenav">
+
+     <h1 style="color:rgb(255, 255, 255);text-align:center">Webex Preparatory task app </h1>
+     <HR WIDTH="100%" SIZE="3" COLOR="#545454" >
+    </div>
+  
+<br>
+
+
+<input mdinput="" class="md-width" placeholder="Enter the Room name" class="md-input" [(ngModel)]="roomName">
+<br><br><br>
+<button md-button color="green" (click)="onCreateRoom()">Create Room</button> <br><br>
+<button type="button" md-button color="red" (click)="onLogout()" >Logout</button><br><br>
+<button md-button color="blue" (click)="addmember()">Add Member</button><br><br>
+<button md-button color="blue" (click)="sendmsg()">Send Message</button>
+</body>
+
